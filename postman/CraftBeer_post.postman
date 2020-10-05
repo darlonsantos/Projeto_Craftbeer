@@ -1,0 +1,297 @@
+{
+	"info": {
+		"_postman_id": "1e0c7687-230a-4749-9ed4-5b6bfb522965",
+		"name": "CraftBeer_post",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	}, 
+	"item": [
+		{
+			"name": "POST ID 1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\": \"BAMBERG RAUCHBIER\",\r\n    \"ingredients\": \"LÚPULO\",\r\n    \"alcoholContent\": \"5,2% ABV\",\r\n    \"price\": 19.08,\r\n    \"category\": \"IPE\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/beerhouse/beers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"beerhouse",
+						"beers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET  ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/beerhouse/beers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"beerhouse",
+						"beers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST ID 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\": \"SAISON À TROIS\",\r\n    \"ingredients\": \"LUPULO\",\r\n    \"alcoholContent\": \"5,8% ABV\",\r\n    \"price\": 12.08,\r\n    \"category\": \"TYI\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/beerhouse/beers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"beerhouse",
+						"beers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LISTA GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\": \"SAISON À TROIS\",\r\n    \"ingredients\": \"LUPULO\",\r\n    \"alcoholContent\": \"5,8% ABV\",\r\n    \"price\": 12.08,\r\n    \"category\": \"TYI\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/beerhouse/beers/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"beerhouse",
+						"beers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\": \"SAISON À TROIS\",\r\n    \"ingredients\": \"LUPULO\",\r\n    \"alcoholContent\": \"5,8% ABV\",\r\n    \"price\": 15.52,\r\n    \"category\": \"TYI\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/beerhouse/beers/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"beerhouse",
+						"beers",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"BAMBERG RAUCHBIER\",\r\n    \"ingredients\": \"LÚPULO\",\r\n    \"alcoholContent\": \"5,2% ABV\",\r\n    \"price\": 45.69,\r\n    \"category\": \"IPE\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/beerhouse/beers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"beerhouse",
+						"beers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST ID 3",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\": \"American IPA\",\r\n    \"ingredients\": \"LÚPULO\",\r\n    \"alcoholContent\": \"5,2% ABV\",\r\n    \"price\": 36.25,\r\n    \"category\": \"ALP\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/beerhouse/beers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"beerhouse",
+						"beers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LISTA GET 2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\": \"SAISON À TROIS\",\r\n    \"ingredients\": \"LUPULO\",\r\n    \"alcoholContent\": \"5,8% ABV\",\r\n    \"price\": 12.08,\r\n    \"category\": \"TYI\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/beerhouse/beers/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"beerhouse",
+						"beers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\": \"SAISON À TROIS\",\r\n    \"ingredients\": \"LUPULO\",\r\n    \"alcoholContent\": \"5,8% ABV\",\r\n    \"price\": 12.08,\r\n    \"category\": \"TYI\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/beerhouse/beers/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"beerhouse",
+						"beers",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
