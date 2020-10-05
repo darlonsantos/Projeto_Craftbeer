@@ -83,12 +83,12 @@ public class CraftbeerController {
 	}
 
 	@DeleteMapping("/{id}")
-	public ResponseEntity<Void> deleta(@PathVariable Integer id) {
-		Beer beerToDelete = craftbeerRepository.findOne(id);
-		if (beerToDelete == null) {
+	public ResponseEntity<Void> delete(@PathVariable Integer id) {
+		Beer beerDelete = craftbeerRepository.findOne(id);
+		if (beerDelete == null) {
 			return ResponseEntity.notFound().build();
 		}
-		craftbeerRepository.delete(beerToDelete);
+		craftbeerRepository.delete(beerDelete);
 		return ResponseEntity.noContent().build();
 	}
 }
