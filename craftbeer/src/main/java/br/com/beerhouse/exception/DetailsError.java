@@ -2,10 +2,6 @@ package br.com.beerhouse.exception;
 
 import java.util.Date;
 
-/**
- * @author darlon.carvalho
- *
- */
 public class DetailsError {
 
 	
